@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Constraint Layouts PRACTICE</string>
+    <string name="logoDescription">logo image</string>
+    <string name="logoDescription2">logo star</string>
+    <string name="countryName">Ireland</string>
+    <string name="location">Location:</string>
+    <string name="date">Date:</string>
+    <string name="dateText">Jan 29, 2019</string>
+    <string name="continut">Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George\'s Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.
+    \n\nArea: 84,421 km²
+    \n\nLanguages: English, Irish, Ulster Scots
+    \n\nPopulation rank: 19th
+    \n\nPoints of interest: Giant\'s Causeway, Cliffs of Moher</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="addicted">&lt;Addicted to Code&gt;</string>
+</resources>

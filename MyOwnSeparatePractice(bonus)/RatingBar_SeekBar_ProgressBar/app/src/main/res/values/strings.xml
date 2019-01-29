@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RatingBar + SeekBar + ProgressBar</string>
+    <string name="ratingBarText">\Android RatingBar PRACTICE</string>
+    <string name="clearRating">Clear Rating</string>
+    <string name="animation">Animation</string>
+    <string name="displayRating">Display Rating</string>
+    <string name="display">Display</string>
+    <string name="animate">Animate</string>
+    <string name="clear">Clear</string>
+    <string name="quit">Quit</string>
+    <string name="seekBarText">Android SeekBar PRACTICE</string>
+    <string name="tempTextSeekBar">Volume: 0 / 100</string>
+    <string name="volume">Volume:</string>
+    <string name="progressBarText">Android ProgressBar PRACTICE</string>
+    <string name="startTask">Start Task</string>
+    <string name="cancelTask">Cancel Task</string>
+    <string name="tempProgressBarText">100 % complete</string>
+    <string name="complete">complete</string>
+    <string name="incomplete">progress</string>
+</resources>
