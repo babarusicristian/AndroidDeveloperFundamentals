@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AA8539"
-    android:padding="10dp"
+    android:background="@color/background_color"
+    android:padding="@dimen/space_10"
     tools:context=".MainActivity">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/btnQuit">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,33 +21,33 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/ratingBarText" />
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/ratingbar_text" />
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/ratingbar_evaluate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:numStars="5"
                 android:stepSize="0.5" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnClearRating"
+                    android:id="@+id/button_clear_rating"
                     style="?android:attr/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/clear" />
 
                 <Button
-                    android:id="@+id/btnAnimateRating"
+                    android:id="@+id/button_animate_rating"
                     style="?android:attr/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -56,7 +55,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/btnDisplayRating"
+                    android:id="@+id/button_display_rating"
                     style="?android:attr/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -69,89 +68,92 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/seekBarText" />
+                android:layout_marginTop="@dimen/space_20"
+                android:text="@string/seekbar_text" />
 
             <SeekBar
-                android:id="@+id/seekBar"
+                android:id="@+id/seekbar_volume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:max="100" />
 
             <TextView
-                android:id="@+id/tvStatusSeekBar"
+                android:id="@+id/textview_status_seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:gravity="center"
-                android:text="@string/tempTextSeekBar" />
+                android:text="@string/temp_text_seekbar" />
             <!-- END SeekBar PRACTICE -->
 
             <!-- ProgressBar PRACTICE -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/progressBarText" />
+                android:layout_marginTop="@dimen/space_20"
+                android:text="@string/progressbar_text" />
 
             <ProgressBar
-                android:id="@+id/progressBar"
+                android:id="@+id/progressbar_task"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="#997733"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginEnd="@dimen/space_10"
+                android:background="@color/background_progressbar"
                 android:max="100"
                 android:padding="5dp" />
 
             <TextView
-                android:id="@+id/tvStatusProgressBar"
+                android:id="@+id/textview_status_progressbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:gravity="center"
-                android:text="@string/tempProgressBarText" />
+                android:text="@string/temp_progressbar_text" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/space_10"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnStartTask"
+                    android:id="@+id/button_start_task"
                     style="?android:attr/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/startTask" />
+                    android:text="@string/start_task" />
 
                 <Button
-                    android:id="@+id/btnCancelTask"
+                    android:id="@+id/button_cancel_task"
                     style="?android:attr/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:enabled="false"
-                    android:text="@string/cancelTask"
+                    android:text="@string/cancel_task"
                     android:textStyle="bold" />
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="@string/progressbar2" />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10" />
             <!-- END ProgressBar PRACTICE -->
 
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
-
-    <Button
-        android:id="@+id/btnQuit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="10dp"
-        android:text="@string/quit" />
 
 </RelativeLayout>

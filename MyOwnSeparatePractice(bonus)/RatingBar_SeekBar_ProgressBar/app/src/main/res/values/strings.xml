@@ -1,20 +1,23 @@
 <resources>
     <string name="app_name">RatingBar + SeekBar + ProgressBar</string>
-    <string name="ratingBarText">\Android RatingBar PRACTICE</string>
-    <string name="clearRating">Clear Rating</string>
+    <string name="ratingbar_text">\Android RatingBar PRACTICE</string>
+    <string name="clear_rating">Clear Rating</string>
     <string name="animation">Animation</string>
-    <string name="displayRating">Display Rating</string>
+    <string name="display_rating">Display Rating</string>
     <string name="display">Display</string>
     <string name="animate">Animate</string>
     <string name="clear">Clear</string>
-    <string name="quit">Quit</string>
-    <string name="seekBarText">Android SeekBar PRACTICE</string>
-    <string name="tempTextSeekBar">Volume: 0 / 100</string>
+    <string name="seekbar_text">Android SeekBar PRACTICE</string>
+    <string name="temp_text_seekbar">Volume: 0 / 100</string>
     <string name="volume">Volume:</string>
-    <string name="progressBarText">Android ProgressBar PRACTICE</string>
-    <string name="startTask">Start Task</string>
-    <string name="cancelTask">Cancel Task</string>
-    <string name="tempProgressBarText">100 % complete</string>
+    <string name="progressbar_text">Android ProgressBar PRACTICE (horizontal mode)</string>
+    <string name="start_task">Start Task</string>
+    <string name="cancel_task">Cancel Task</string>
+    <string name="temp_progressbar_text">100 % complete</string>
     <string name="complete">complete</string>
     <string name="incomplete">progress</string>
+    <string name="progressbar2">Android ProgressBar PRACTICE (indicator mode)</string>
+    <string name="the_rating_is">The rating is:</string>
+    <string name="started_tracking">Started tracking...</string>
+    <string name="stopped_tracking">Stopped tracking...</string>
 </resources>
