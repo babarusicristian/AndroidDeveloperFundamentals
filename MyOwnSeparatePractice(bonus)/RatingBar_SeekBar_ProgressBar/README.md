@@ -17,4 +17,4 @@ Learn how to use
 * Java code (simulate some tasks, display status)
 <br>
 <br>
-<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/MyOwnSeparatePractice(bonus)/RatingBar_SeekBar_ProgressBar/rbsbpb.png" align="left" height="50%" width="50%" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/MyOwnSeparatePractice(bonus)/RatingBar_SeekBar_ProgressBar/rbsbpb2.png" align="left" height="50%" width="50%" ></a>
