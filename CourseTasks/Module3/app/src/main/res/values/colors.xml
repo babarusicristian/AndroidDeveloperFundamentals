@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4054B2</color>
+    <color name="colorPrimaryDark">#31429D</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_custom_orange">#FB987E</color>
+    <color name="color_custom_blue">#4054B2</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="custom_orage">#FBC962</color>
+    <color name="custom_orange2">#FB987E</color>
+    <color name="custom_green2">#7CCBC5</color>
+    <color name="custom_green">#CDEDD7</color>
+    <color name="custom_white">#FAFAFA</color>
+</resources>

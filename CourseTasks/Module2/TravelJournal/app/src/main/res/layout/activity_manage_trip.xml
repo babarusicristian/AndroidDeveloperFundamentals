@@ -60,7 +60,6 @@
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/space_10">
 
-
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
