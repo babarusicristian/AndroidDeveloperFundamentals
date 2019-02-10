@@ -41,9 +41,15 @@ layout to be built ...
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 
 my solving ...
 <a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc1.jpg" align="left" height="90%" width="90%" ></a>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -87,6 +93,9 @@ Build the next layouts by using:
 
 layout to be built
 <a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/c2.jpg" align="left" height="90%" width="90%" ></a>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
