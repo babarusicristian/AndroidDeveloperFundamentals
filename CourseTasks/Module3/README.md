@@ -74,8 +74,6 @@ my solving ...
 <br>
 <br>
 <br>
-<br>
-<br>
 
 # Code Challenge No 2:
 
