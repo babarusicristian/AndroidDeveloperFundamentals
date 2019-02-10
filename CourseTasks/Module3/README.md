@@ -46,7 +46,7 @@ layout to be built ...
 <br>
 
 my solving ...
-<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc1.jpg" align="left" height="90%" width="90%" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc1.png" align="left" height="90%" width="90%" ></a>
 <br>
 <br>
 <br>
