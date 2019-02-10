@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/space_40"
+    android:layout_height="match_parent"
+    tools:context=".CodeChallenge4Activity">
+
+    <TextView
+        android:layout_marginBottom="@dimen/space_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/custom_gray"
+        android:text="@string/spinner_example"/>
+
+    <Spinner
+        android:id="@+id/spinner_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+</LinearLayout>

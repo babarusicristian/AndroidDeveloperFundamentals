@@ -44,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent3);
             }
         });
+
+        mButttonChallenge4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(MainActivity.this, CodeChallenge4Activity.class);
+                startActivity(intent4);
+            }
+        });
     }
 
     private void initView() {
