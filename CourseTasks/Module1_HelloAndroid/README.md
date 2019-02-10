@@ -15,5 +15,5 @@ Task 1
 * Publish the code in repository using **git**.
 <br>
 <br>
-<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/HelloAndroid/ha.png" align="left" height="50%" width="50%" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module1_HelloAndroid/ha.png" align="left" height="50%" width="50%" ></a>
 
