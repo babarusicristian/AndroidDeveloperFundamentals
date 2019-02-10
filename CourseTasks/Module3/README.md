@@ -206,4 +206,81 @@ my solving ... <br>
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# Code Challenge No 4:
+
+Build the next layout by using:
+* Spinner
+
+<br>
+<br>
+
+layout to be built<br>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/c4.jpg" align="left" height="90%" width="90%" ></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+my solving ... <br>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc4.png" align="left" height="90%" width="90%" ></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
