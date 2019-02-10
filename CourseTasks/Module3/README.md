@@ -128,7 +128,7 @@ layout to be built
 <br>
 
 my solving ...
-<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc2.jpg" align="left" height="100%" width="100%" ></a>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc2.png" align="left" height="100%" width="100%" ></a>
 <br>
 <br>
 <br>

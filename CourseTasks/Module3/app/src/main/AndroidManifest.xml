@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".CodeChallenge3Activity"
+            android:label="@string/title_code_challenge_3" />
+        <activity
             android:name=".CodeChallenge2Activity"
             android:label="@string/title_code_challenge_2" />
         <activity
