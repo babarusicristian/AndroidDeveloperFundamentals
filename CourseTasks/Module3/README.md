@@ -328,11 +328,6 @@ layout to be built<br>
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 my solving ... <br>
 <a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc5.png" align="left" height="50%" width="50%" ></a>
