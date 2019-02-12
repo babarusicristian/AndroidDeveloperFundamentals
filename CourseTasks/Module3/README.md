@@ -282,4 +282,76 @@ my solving ... <br>
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# BONUS Puzzle:
+
+layout to be built<br>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/c5.png" align="left" height="35%" width="35%" ></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+my solving ... <br>
+<a href="url"><img src="https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module3/rezolvatc5.png" align="left" height="50%" width="50%" ></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
