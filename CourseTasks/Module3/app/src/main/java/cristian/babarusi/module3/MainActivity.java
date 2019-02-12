@@ -52,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent4);
             }
         });
+
+        mButtonBonusPuzzle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(MainActivity.this, BonusPuzzleActivity.class);
+                startActivity(intent5);
+            }
+        });
     }
 
     private void initView() {

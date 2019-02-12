@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="8"
+    android:orientation="vertical"
+    tools:context=".BonusPuzzleActivity">
+
+
+    <!-- line box one 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/custom_violet" />
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/custom_pink" />
+
+    </LinearLayout>
+    <!-- END line box one 1 -->
+
+    <!-- line box two 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/custom_orage" />
+
+        <FrameLayout
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/custom_green">
+
+            <View
+                android:id="@+id/view_bluebox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@color/color_custom_blue" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <!-- END line box two 2 -->
+
+    <!-- line box three 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/custom_fosforescent_green" />
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/custom_ultra_green" />
+
+    </LinearLayout>
+    <!-- END line box three 3 -->
+
+    <!-- line box four 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/custom_orage" />
+
+        <FrameLayout
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/color_custom_blue">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_1"
+                android:layout_marginTop="@dimen/space_1"
+                android:layout_marginRight="@dimen/space_1"
+                android:background="@color/custom_violet" />
+
+            <View
+                android:id="@+id/view_pinkbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/custom_pink" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/custom_pink" />
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/custom_orage" />
+
+        <View
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@color/custom_green2" />
+
+    </LinearLayout>
+    <!-- END line box four 4 -->
+
+    <!-- empty area -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="4" />
+
+    <!-- END empty area -->
+
+</LinearLayout>

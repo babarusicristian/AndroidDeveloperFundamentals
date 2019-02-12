@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Module3</string>
+    <string name="app_name">Module 3</string>
     <string name="title_code_challenge_1">Module3: Code Challenge 1</string>
     <string name="title_code_challenge_2">Module3: Code Challenge 2</string>
     <string name="title_code_challenge_3">Module3: Code Challenge 3</string>
@@ -15,16 +15,57 @@
     <string name="fill_phone_number">Please fill the phone number</string>
     <string name="you_must_accept_terms">You must accept the terms</string>
     <string name="terms">Terms</string>
-    <string name="module_3_challenge_1">Challenge 1 (module3)</string>
-    <string name="module_3_challenge_2">Challenge 2 (module3)</string>
-    <string name="module_3_challenge_3">Challenge 3 (module3)</string>
-    <string name="module_3_challenge_4">Challenge 4 (module3)</string>
-    <string name="module_3_bonus_puzzle">Bonus Puzzle (module3)</string>
-    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fringilla turpis in lectus tincidunt, id scelerisque odio fermentum. Proin quis velit auctor, vulputate arcu ut, vehicula odio. Duis finibus aliquam sapien non aliquam. Cras id aliquet ipsum, vitae finibus quam. Aliquam ut pretium augue, vitae egestas neque. Suspendisse nulla nisl, mattis a porttitor non, ullamcorper in augue. Integer feugiat vestibulum elementum. Suspendisse feugiat diam eget pretium luctus. Phasellus venenatis cursus dictum. Morbi viverra egestas mi, ac faucibus elit lacinia vitae. Suspendisse sodales ullamcorper sem, non imperdiet magna condimentum nec. Nullam congue ante sed augue porta tempus. Pellentesque ornare turpis vel vehicula convallis. Vestibulum sit amet consequat nisl. Praesent mollis neque diam, at consequat lorem efficitur vitae. Praesent eget nunc rhoncus, semper sapien id, ultrices ipsum.
-    \n\nUt ex ante, blandit in eros ultricies, porta puorta magna. Sed porttitor, ipsum at tristique dapibus, ipsum quam vulputate tellus, vitae feugiat erat dolor vitae leo. Nam nec est gravida, rutrum lectus ut, congue quam. Vestibulum nisi eros, euismod eu lacinia at, auctor nec justo. Integer quis lectus et leo hendrerit cursus. Donec mollis ex pellentesque velit ultrices, sed rhoncus neque volutpat. Nulla placerat venenatis justo, a interdum nunc rutrum vel. Nunc luctus tristique tincidunt. Morbi eget molestie nunc, eget pretium risus. Aenean fermentum lobortis massa, at vehicula ligula ullamcorper et. Nullam dolor elit, ultricies aliquet lacinia eget, fringilla sed mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    \n\nNullam quis fringilla purus. Nullam rhoncus, urna porta gravida placerat, massa lorem cursus urna, non tempor nulla orci et nibh. In tortor mi, fringilla sed ex ut, pharetra finibus risus. Fusce quis porttitor neque, ac auctor augue. Nulla pretium rutrum nibh, at commodo leo laoreet id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas pharetra pellentesque neque, sit amet dapibus turpis mattis eu. Cras sit amet pharetra odio. Vivamus nec nulla a tellus tempor tristique in sit amet justo. Morbi tristique nisi ante, sed varius urna tincidunt a. In dictum tellus quis fermentum mollis. Morbi porttitor a metus sit amet imperdiet. Ut rhoncus pretium fermentum. Pellentesque rhoncus est vitae lectus semper, ut pretium magna laoreet. Ut placerat accumsan ornare.
-    \n\nInteger vel turpis vitae urna ultrices eleifend at a turpis. Vivamus ut odio eu massa porttitor tempus et ac tortor. Morbi id lorem feugiat, lobortis orci id, faucibus nulla. Donec suscipit volutpat lorem, id imperdiet urna blandit quis. Curabitur eleifend purus quam, sit amet egestas lorem facilisis sed. Duis id turpis auctor, aliquam urna at, elementum nulla. Suspendisse nec elit risus. Suspendisse ex purus, fringilla non maximus vitae, cursus in orci. Ut volutpat purus sed urna placerat, at commodo orci varius. Nullam ac pulvinar risus. Duis id velit urna. Curabitur vitae eros rutrum magna ullamcorper semper eget sed felis. Fusce dapibus ultrices lobortis.
-    \n\nSed accumsan convallis lorem et sagittis. Cras tempus mauris eu nisi ultrices, eget dignissim turpis auctor. Etiam sagittis euismod ultrices. Sed ultrices ligula eu felis convallis suscipit. Etiam eleifend purus vitae elementum tempus. Donec porta risus et metus tempus congue. Aenean vitae tellus a odio vehicula consectetur. In quis tincidunt quam. Nunc malesuada mollis mi a interdum. Nam varius nisi at iaculis efficitur. In consequat diam et porta iaculis. Proin egestas consequat hendrerit. Vivamus tincidunt elit orci, non gravida nunc convallis nec. Nulla lacinia tellus id gravida sollicitudin. Aenean fermentum justo ligula, nec gravida ipsum rutrum finibus.</string>
+    <string name="module_3_challenge_1">Challenge 1</string>
+    <string name="module_3_challenge_2">Challenge 2</string>
+    <string name="module_3_challenge_3">Challenge 3</string>
+    <string name="module_3_challenge_4">Challenge 4</string>
+    <string name="module_3_bonus_puzzle">Bonus Puzzle</string>
+    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aliquam fringilla turpis in lectus tincidunt, id scelerisque odio fermentum. Proin quis
+        velit auctor, vulputate arcu ut, vehicula odio. Duis finibus aliquam sapien non aliquam.
+        Cras id aliquet ipsum, vitae finibus quam. Aliquam ut pretium augue, vitae egestas neque.
+        Suspendisse nulla nisl, mattis a porttitor non, ullamcorper in augue. Integer feugiat
+        vestibulum elementum. Suspendisse feugiat diam eget pretium luctus. Phasellus venenatis
+        cursus dictum. Morbi viverra egestas mi, ac faucibus elit lacinia vitae. Suspendisse
+        sodales ullamcorper sem, non imperdiet magna condimentum nec. Nullam congue ante sed augue
+        porta tempus. Pellentesque ornare turpis vel vehicula convallis. Vestibulum sit amet
+        consequat nisl. Praesent mollis neque diam, at consequat lorem efficitur vitae.
+        Praesent eget nunc rhoncus, semper sapien id, ultrices ipsum.
+    \n\nUt ex ante, blandit in eros ultricies, porta puorta magna. Sed porttitor, ipsum at
+        tristique dapibus, ipsum quam vulputate tellus, vitae feugiat erat dolor vitae leo. Nam nec
+        est gravida, rutrum lectus ut, congue quam. Vestibulum nisi eros, euismod eu lacinia at,
+        auctor nec justo. Integer quis lectus et leo hendrerit cursus. Donec mollis ex pellentesque
+        velit ultrices, sed rhoncus neque volutpat. Nulla placerat venenatis justo, a interdum nunc
+        rutrum vel. Nunc luctus tristique tincidunt. Morbi eget molestie nunc, eget pretium risus.
+        Aenean fermentum lobortis massa, at vehicula ligula ullamcorper et. Nullam dolor elit,
+        ultricies aliquet lacinia eget, fringilla sed mi. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+    \n\nNullam quis fringilla purus. Nullam rhoncus, urna porta gravida placerat, massa lorem
+        cursus urna, non tempor nulla orci et nibh. In tortor mi, fringilla sed ex ut, pharetra
+        finibus risus. Fusce quis porttitor neque, ac auctor augue. Nulla pretium rutrum nibh, at
+        commodo leo laoreet id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+        posuere cubilia Curae; Maecenas pharetra pellentesque neque, sit amet dapibus turpis mattis
+        eu. Cras sit amet pharetra odio. Vivamus nec nulla a tellus tempor tristique in sit amet
+        justo. Morbi tristique nisi ante, sed varius urna tincidunt a. In dictum tellus quis
+        fermentum mollis. Morbi porttitor a metus sit amet imperdiet. Ut rhoncus pretium fermentum.
+        Pellentesque rhoncus est vitae lectus semper, ut pretium magna laoreet. Ut placerat
+        accumsan ornare.
+    \n\nInteger vel turpis vitae urna ultrices eleifend at a turpis. Vivamus ut odio eu massa
+        porttitor tempus et ac tortor. Morbi id lorem feugiat, lobortis orci id, faucibus nulla.
+        Donec suscipit volutpat lorem, id imperdiet urna blandit quis. Curabitur eleifend purus
+        quam, sit amet egestas lorem facilisis sed. Duis id turpis auctor, aliquam urna at,
+        elementum nulla. Suspendisse nec elit risus. Suspendisse ex purus, fringilla non maximus
+        vitae, cursus in orci. Ut volutpat purus sed urna placerat, at commodo orci varius.
+        Nullam ac pulvinar risus. Duis id velit urna. Curabitur vitae eros rutrum magna ullamcorper
+        semper eget sed felis. Fusce dapibus ultrices lobortis.
+    \n\nSed accumsan convallis lorem et sagittis. Cras tempus mauris eu nisi ultrices, eget
+        dignissim turpis auctor. Etiam sagittis euismod ultrices. Sed ultrices ligula eu felis
+        convallis suscipit. Etiam eleifend purus vitae elementum tempus. Donec porta risus et
+        metus tempus congue. Aenean vitae tellus a odio vehicula consectetur. In quis tincidunt
+        quam. Nunc malesuada mollis mi a interdum. Nam varius nisi at iaculis efficitur. In
+        consequat diam et porta iaculis. Proin egestas consequat hendrerit. Vivamus tincidunt
+        elit orci, non gravida nunc convallis nec. Nulla lacinia tellus id gravida sollicitudin.
+        Aenean fermentum justo ligula, nec gravida ipsum rutrum finibus.</string>
     <string name="spinner_example">Spinner Example</string>
 
 </resources>

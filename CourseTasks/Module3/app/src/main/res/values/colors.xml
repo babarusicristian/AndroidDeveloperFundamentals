@@ -13,4 +13,7 @@
     <color name="custom_white">#FAFAFA</color>
     <color name="custom_violet">#9B2FAE</color>
     <color name="custom_gray">#747474</color>
+    <color name="custom_pink">#FE6BB1</color>
+    <color name="custom_fosforescent_green">#49F915</color>
+    <color name="custom_ultra_green">#C3FB6A</color>
 </resources>

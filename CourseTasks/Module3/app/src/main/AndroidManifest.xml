@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".BonusPuzzleActivity"
+            android:label="@string/title_bonus_puzzle" />
+        <activity
             android:name=".CodeChallenge4Activity"
             android:label="@string/title_code_challenge_4" />
         <activity
