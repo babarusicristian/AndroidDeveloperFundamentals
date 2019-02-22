@@ -84,9 +84,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
             android:text="@string/march_2017_pg_129_minutes"
             android:textColor="@color/custom_gray_textcolor"
-            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_left"
             app:layout_constraintStart_toStartOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
