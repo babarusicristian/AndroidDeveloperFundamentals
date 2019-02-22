@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Second application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/custom_light_blue</item>
+        <item name="colorPrimaryDark">@color/custom_dark_blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Transparent application theme. -->
+    <style name="AppThemeMovie" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/custom_light_blue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:textColor">@color/custom_style_textcolor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Bonus2 application theme. -->
+    <style name="AppThemeBonus2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/light_green_bonus2</item>
+        <item name="colorPrimaryDark">@color/dark_green_bonus2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+</resources>

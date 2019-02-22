@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cristian.babarusi.module4">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Bonus2Activity"
+            android:label="@string/title_bonus2"
+            android:theme="@style/AppThemeBonus2"/>
+        <activity
+            android:name=".Bonus1Activity"
+            android:label="@string/title_bonus1"
+            android:theme="@style/AppThemeMovie" />
+        <activity
+            android:name=".Challenge4Activity"
+            android:label="@string/title_challenge4" />
+        <activity
+            android:name=".Challenge3Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_challenge3"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".WithoutBarierActivity"
+            android:label="@string/title_without_barier" />
+        <activity
+            android:name=".Challenge2Activity"
+            android:label="@string/title_challenge2"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Challenge1Activity"
+            android:label="@string/title_challenge1" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

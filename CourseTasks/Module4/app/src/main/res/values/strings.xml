@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Module 4</string>
+
+    <string name="title_challenge1">Module 4 - Challenge ONE</string>
+    <string name="title_challenge2">Students</string>
+    <string name="title_challenge3">Module 4 - Challenge THREE</string>
+    <string name="title_challenge4">Travel Journal</string>
+    <string name="title_bonus1">Module 4 - Bonus ONE</string>
+    <string name="title_bonus2">Recycler View</string>
+    <string name="title_without_barier">Without BARIER - same functionality</string>
+
+    <string name="challenge_1">Challenge 1</string>
+    <string name="challenge_2">Challenge 2</string>
+    <string name="challenge_3">Challenge 3</string>
+    <string name="challenge_4">Challenge 4</string>
+    <string name="bonus_1">Bonus 1</string>
+    <string name="bonus_2">Bonus 2</string>
+
+    <string name="without_barier">Without Barier</string>
+    <string name="do_something">Do Something</string>
+    <string name="plus_text">+ text</string>
+    <string name="minus_text">- text</string>
+    <string name="lastname">LastName</string>
+    <string name="firstname">FirstName</string>
+    <string name="happy_holidays">Happy Holidays!</string>
+    <string name="from_magda">From Magda</string>
+    <string name="the_wishing">Have yourself a merry little Christmas,
+        \nLet your hearth be light
+        \nFrom now on, out troubles will be out of sight</string>
+    <string name="let_it_snow">Let it snow</string>
+    <string name="gingles_bells">Gingles Bells</string>
+    <string name="gingles_bells_started">Gingles Bells started …</string>
+    <string name="gingles_bells_stopped">Gingles Bells stopped …</string>
+    <string name="gingles_bells_allready_playing">Gingles Bells allready playing …</string>
+    <string name="wow_it_is_snowing">Woow! It is snowing, yuhuuu!!</string>
+    <string name="ohh_no_snowing_anymore">Ooh, not snowing anymore :((</string>
+    <string name="demo_holiday_2017">Demo Holiday 2017</string>
+    <string name="demo_islands">Demo Islands</string>
+    <string name="beauty_and_the_beast">Beauty and the Beast</string>
+    <string name="march_2017_pg_129_minutes">March 2017 PG 129 minutes</string>
+    <string name="rent_from_r29_99">Rent from R29,99</string>
+    <string name="buy_from_r127_99">Buy from R127,99</string>
+    <string name="four_point_five">4.5</string>
+    <string name="_242_ratings">242 ratings</string>
+    <string name="family">Family</string>
+    <string name="_71">71%</string>
+    <string name="similar">Similar</string>
+    <string name="the_story">The story and characters you know and love come to spectacular life in
+    the live-action adaption of Disney\'s animated classic Beauty and the Beast.</string>
+    <string name="demo_cupcake">Demo Cupcake</string>
+    <string name="demo_versiona_1_5_api_level_3">Demo versiona 1.5 Api Level: 3</string>
+
+</resources>
