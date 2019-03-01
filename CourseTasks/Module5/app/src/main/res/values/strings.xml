@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Module5</string>
+    <string name="challenge_1">Funny Application</string>
+    <string name="challenge_3">Challenge 3</string>
+    <string name="challenge_4">Challenge 4</string>
+    <string name="text_one">Text ONE</string>
+    <string name="text_two">Text TWO</string>
+    <string name="text_three">Text THREE</string>
+    <string name="demo_display_content">demo display content</string>
+
+    <string name="paragraph1">TEXT ONE
+        \n\nAndroid este o platformă software și un sistem de operare pentru
+        dispozitive și telefoane mobile bazată pe nucleul Linux, dezvoltată inițial de compania
+        Google, iar mai târziu de consorțiul comercial Open Handset Alliance.[3] Android permite
+        dezvoltatorilor să scrie cod gestionat în limbajul Java, controlând dispozitivul prin
+        intermediul bibliotecilor Java dezvoltate de Google.[4] Aplicațiile scrise în C și în alte
+        limbaje pot fi compilate în cod mașină ARM și executate, dar acest model de dezvoltare nu
+        este sprijinit oficial de către Google.[5][6]
+        \nLansarea platformei Android la 5 noiembrie 2007 a fost anunțată prin fondarea Open
+        Handset Alliance, un consorțiu de 48 de companii de hardware, software și de
+        telecomunicații, consacrat dezvoltării de standarde deschise pentru dispozitive mobile.
+        [7] Google a lansat cea mai mare parte a codului Android sub licența Apache, o licență de
+        tip free-software și open source.
+        \nPrimele aprecieri cu privire la dezvoltarea aplicațiilor pentru platforma Android au fost
+        amestecate.[64] Problemele citate includeau bug-uri, lipsa de documentație, infrastructura
+        de testare inadecvată, și lipsa unui sistem de gestionare a problemelor public. (Google a
+        anunțat un sistem de gestionare a problemelor la data de 18 ianuarie 2008.)[65] În
+        decembrie 2007, fondatorul startup-ului mobil MergeLab Adam MacBeth a declarat:
+        "Funcționalitatea lipsește, este prost documentată sau pur și simplu nu funcționează… Este
+        clar că nu este gata pentru prime time."[66] În ciuda acestui fapt, aplicațiile pentru
+        Android au început să apară deja în săptămâna următoare celei în care a fost anunțată
+        platforma.Prima aplicație publică a fost jocul Snake.[67][68] Telefonul Android Dev este
+        un dispozitiv cu SIM și hardware neblocate care este destinat dezvoltatorilor avansați.
+        Cu toate că dezvoltatorii pot utiliza un dispozitiv de consum achiziționat de pe piață
+        pentru a-și testa și a utiliza aplicațiile, unii dezvoltatori pot alege să nu utilizeze
+        un dispozitiv de pe piață, preferând un aparat neblocat sau fără contract.</string>
+    <string name="paragraph2">TEXT TWO
+        \n\nÎn iulie 2005 Google a achiziționat Android, Inc, o mică companie de
+        tip startup cu sediul în Palo Alto, California, SUA.[9] Cofondatorii companiei Android,
+        care au continuat să muncească la Google, au fost Andy Rubin (cofondator al Danger[10]),
+        Rich Miner (cofondator al Wildfire Communications, Inc[11]), Nick Sears (fost
+        vicepreședinte al T-Mobile[12]) și Chris White (unul dintre primii ingineri ai
+        WebTV[necesită citare]). La acea dată se cunoștea foarte puțin despre Android, Inc., doar
+        că făceau software pentru telefoane mobile.[9] Aceasta a cauzat zvonuri că Google ar
+        plănui să intre pe piața telefoniei mobile, deși era neclar ce funcție ar putea îndeplini
+        în această piață.[necesită citare]
+        \nLa Google, echipa condusă de Rubin a dezvoltat un sistem de operare pentru dispozitive
+        mobile bazat pe Linux, pe care l-au prezentat producătorilor de telefoane mobile și
+        operatorilor de rețele de telefonie mobilă, cu perspectiva de a asigura un sistem flexibil,
+        upgradabil.[necesită citare] Google a raportat că a aliniat deja o serie de parteneri
+        producători de componente hardware și software la noul concept, și a semnalat operatorilor
+        de rețele de telefonie mobilă că era deschis la diferite grade de cooperare din partea
+        acestora.[13][14][15] Mai multe speculații că Google ar fi putut intra pe piața telefoniei
+        mobile au apărut în decembrie 2006.[16] Rapoarte de la BBC și Wall Street Journal au
+        remarcat faptul că Google își dorea căutarea web și aplicațiile sale pe telefoane mobile
+        și că lucra din greu către acest țel. Presa și siturile de știri au publicat curând zvonuri
+        că Google ar dezvolta un dispozitiv mobil marca Google.[17] A urmat și mai multă
+        speculație, susținând că în timp ce Google definea specificațiile tehnice, ar fi
+        demonstrat prototipuri producătorilor de telefoane mobile și operatorilor de rețea. S-a
+        raportat că până la 30 de telefoane prototip operau deja pe piață.[18]
+        \nÎn septembrie 2007 InformationWeek a publicat un studiu al companiei Evalueserve care
+        dezvăluia că Google a depus cereri pentru mai multe brevete de invenție în domeniul
+        telefoniei mobile.</string>
+    <string name="paragraph3">TEXT THREE
+        \n\nFondarea Open Handset Alliance
+Articol principal: Open Handset Alliance.
+"Today\'s announcement is more ambitious than any single \'Google Phone\' that the press has been
+        speculating about over the past few weeks. Our vision is that the powerful platform we\'re
+        unveiling will power thousands of different phone models."
+        \n\n-Eric Schmidt, Google Chairman/CEO[3]
+        \nLa 5 noiembrie 2007 a fost făcut public Open Handset Alliance, un consorțiu incluzând
+        Google, HTC, Intel, Motorola, Qualcomm, T-Mobile, Sprint Nextel și Nvidia, cu scopul de a
+        dezvolta standarde deschise pentru dispozitive mobile.[3] Odată cu formarea Open Handset
+        Alliance, OHA a dezvăluit de asemenea primul său produs, Android, o platformă pentru
+        dispozitive mobile construită pe nucleul Linux, versiunea 2.6.[3]
+        \n\nLa 9 decembrie 2008, a fost anunțat că 14 noi membri au aderat la proiectul Android,
+        incluzând: Sony Ericsson, Vodafone Group Plc, ARM Holdings Plc, Asustek Computer Inc,
+        Toshiba Corp și Garmin Ltd.[21]
+        \n\nPreședintele și CEO-ul Google Eric Schmidt a avut nevoie de o bună bucată de timp în
+        comunicatul de presă oficial pentru a elimina toate zvonurile și speculațiile precedente cu
+        privire la existența unui telefon Google.[3]
+        \n\nOpen Source
+        \nÎncepând cu 21 octombrie 2008, Android a fost disponibil ca Open Source. Google a deschis
+        întregul cod sursă (inclusiv suportul pentru rețea și telefonie [22]), care anterior era
+        indisponibil, sub licența Apache.[23] Sub licența Apache producătorii sunt liberi să
+        adauge extensii proprietare, fără a le face disponibile comunității open source. În timp
+        ce contribuțiile Google la această platformă se așteaptă să rămână open source, numărul
+        versiunilor derivate ar putea exploda, folosind o varietate de licențe.
+        \n\nAndroid a fost criticat că nu este software open source în totalitate, în ciuda a ceea
+        ce a fost anunțat de către Google. Părți ale SDK-ului sunt proprietare și sursă închisă și
+        unii cred că acest lucru este pentru ca Google să poată controla platforma.[24][25][26][27]
+        Licența Software Development Kit-ul Android [28] afirmă că:
+        \n\n„3.2 You agree that Google (or Google\'s licensors) own all legal right, title and
+        interest in and to the SDK, including any intellectual property rights which subsist in
+        the SDK. Use, reproduction and distribution of components of the SDK licensed under an
+        open source software license are governed solely by the terms of that open source software
+        license and not by this License Agreement. Until the SDK is released under an open source
+        license, you may not extract the source code or create a derivative work of the SDK.”
+        \nCu toate acestea, Google a anunțat între timp că toate componentele sistemului de operare
+        vor fi lansate sub licența Apache unde este cazul și sub licența GPL în rest.</string>
+    <string name="message">Message</string>
+    <string name="text_first_activity">text first activity</string>
+    <string name="send">Send</string>
+    <string name="text_second_activity">text second activity</string>
+    <string name="title__challenge_5">Module5: Challenge 5</string>
+    <string name="title__challenge_6">Simple To-Do List</string>
+    <string name="challenge_5">Challenge 5</string>
+    <string name="challenge_6">Challenge 6</string>
+    <string name="title_challenge4_first">Module5: Challenge4 FIRST</string>
+    <string name="title_challenge4_second">Module5: Challenge4 SECOND</string>
+    <string name="title__challenge_3">Module5: Challenge 3</string>
+    <string name="open_website">Open website</string>
+    <string name="open_location">Open location</string>
+    <string name="share_text">Share text</string>
+    <string name="type_a_site_url">type a site url</string>
+    <string name="type_some_text_to_be_shared">type some text to be shared</string>
+    <string name="type_a_location">type a location</string>
+    <string name="you_dont_have_any_app">You do not have any application that can handle this request.</string>
+    <string name="provide_location">Detected empty field. Please provide a Location.</string>
+    <string name="invalid_url">Invalid URL.</string>
+    <string name="provide_url">Detected empty field. Please provide an URL.</string>
+    <string name="provide_text">Detected empty field. Please provide a text.</string>
+    <string name="add_to_list">Add to List</string>
+    <string name="type_task_here">type task here</string>
+    <string name="demo_task_name">demo task name</string>
+    <string name="detected_empty_task">Detected empty task.</string>
+
+</resources>

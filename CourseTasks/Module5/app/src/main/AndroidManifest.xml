@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cristian.babarusi.module5">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Challenge6Activity"
+            android:label="@string/title__challenge_6"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".Challenge5Activity"
+            android:label="@string/title__challenge_5" />
+        <activity
+            android:name=".SecondChallenge4Activity"
+            android:label="@string/title_challenge4_second" />
+        <activity
+            android:name=".FirstChallenge4Activity"
+            android:label="@string/title_challenge4_first" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity
+            android:name=".Challenge3Activity"
+            android:label="@string/title__challenge_3" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
