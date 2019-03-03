@@ -1,4 +1,4 @@
-package cristian.babarusi.traveljournal;
+package cristian.babarusi.traveljournalhomework;
 
 import org.junit.Test;
 

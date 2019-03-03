@@ -1,4 +1,4 @@
-package cristian.babarusi.traveljournal;
+package cristian.babarusi.traveljournalhomework;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

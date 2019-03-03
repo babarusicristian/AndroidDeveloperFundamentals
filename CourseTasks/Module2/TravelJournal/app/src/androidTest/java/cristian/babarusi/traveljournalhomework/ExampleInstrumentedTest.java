@@ -1,4 +1,4 @@
-package cristian.babarusi.traveljournal;
+package cristian.babarusi.traveljournalhomework;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
