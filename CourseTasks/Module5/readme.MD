@@ -7,6 +7,11 @@
 
 ![alt text](https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module5/rezolvatc3.png)
 
+### Challenge 4
+
+![alt text](https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module5/rezolvatc4.png)
+
+
 ### Challenge 5
 
 ![alt text](https://raw.githubusercontent.com/babarusicristian/AndroidDeveloperFundamentals/master/CourseTasks/Module5/rezolvatc5.png)
