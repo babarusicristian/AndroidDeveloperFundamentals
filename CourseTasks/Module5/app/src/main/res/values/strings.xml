@@ -124,5 +124,8 @@ Articol principal: Open Handset Alliance.
     <string name="type_task_here">type task here</string>
     <string name="demo_task_name">demo task name</string>
     <string name="detected_empty_task">Detected empty task.</string>
+    <string name="please_fill_a_message">Please, fill a message</string>
+    <string name="reply_received">Reply received</string>
+    <string name="message_received">Message received</string>
 
 </resources>
