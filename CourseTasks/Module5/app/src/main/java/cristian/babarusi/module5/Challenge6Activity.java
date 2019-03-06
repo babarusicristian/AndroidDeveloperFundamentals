@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +18,9 @@ public class Challenge6Activity extends AppCompatActivity {
     private RecyclerView mRecyclerViewTasks;
     private Button mButtonAdd;
     private EditText mEditTextItemToAdd;
+    private static TasksAdapter mTasksAdapter;
 
-    List<TasksModel> listTasks;
+    private static List<TasksModel> listTasks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +38,8 @@ public class Challenge6Activity extends AppCompatActivity {
                     addTask(mEditTextItemToAdd.getText().toString());
                     mEditTextItemToAdd.setText("");
                     //refresh list
-                    TasksAdapter tasksAdapter = new TasksAdapter(getTaskSource(), Challenge6Activity.this);
-                    mRecyclerViewTasks.setAdapter(tasksAdapter);
+                    mTasksAdapter.notifyDataSetChanged();
+
                 } else {
                     mEditTextItemToAdd.setError(getString(R.string.detected_empty_task));
                     mEditTextItemToAdd.requestFocus();
@@ -56,14 +56,19 @@ public class Challenge6Activity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(Challenge6Activity.this);
         mRecyclerViewTasks.setLayoutManager(layoutManager);
 
-        TasksAdapter tasksAdapter = new TasksAdapter(getTaskSource(), Challenge6Activity.this);
-        mRecyclerViewTasks.setAdapter(tasksAdapter);
+        mTasksAdapter = new TasksAdapter(getTaskSource(), Challenge6Activity.this);
+        mRecyclerViewTasks.setAdapter(mTasksAdapter);
     }
 
     private void addTask(String txtTask) {
         TasksModel objTask = new TasksModel();
         objTask.setTaskName(txtTask);
         listTasks.add(objTask);
+    }
+
+    public static void removeTask(int position) {
+        listTasks.remove(position);
+        mTasksAdapter.notifyDataSetChanged(); //refresh list
     }
 
     private List<TasksModel> getTaskSource() {

@@ -31,8 +31,27 @@ public class TasksAdapter extends RecyclerView.Adapter<TasksViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull TasksViewHolder tasksViewHolder, final int i) {
-        TasksModel currentTask = mListTasks.get(i);
+        final int position = i;
+        final TasksModel currentTask = mListTasks.get(i);
         tasksViewHolder.getTextViewTaskName().setText(currentTask.getTaskName());
+
+        tasksViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "clicked pos: " + position, Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
+        tasksViewHolder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                String itemName = mListTasks.get(position).getTaskName();
+                Toast.makeText(mContext, "removed: " + itemName, Toast.LENGTH_SHORT).show();
+                Challenge6Activity.removeTask(position); //static method from another class
+                return true;
+            }
+        });
     }
 
     @Override
