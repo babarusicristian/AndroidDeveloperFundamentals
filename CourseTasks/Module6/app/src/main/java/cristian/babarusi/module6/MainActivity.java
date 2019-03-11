@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
     private Button mButtonSendDatas;
     private EditText mEditTextDataToActivity;
     private EditText mEditTextDataToFragment;
+    private Button mButtonCodeChallenge6;
+    private Button mButtonCodeChallenge4;
+    private Button mButtonCodeChallenge5;
+    private Button mButtonCodeChallenge8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +92,38 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        mButtonCodeChallenge4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Challenge4Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonCodeChallenge5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Challenge5Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonCodeChallenge6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CodeChallenge6and7Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        mButtonCodeChallenge8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Challenge8Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {
@@ -97,6 +133,10 @@ public class MainActivity extends AppCompatActivity {
         mButtonSendDatas = findViewById(R.id.button_send_datas);
         mEditTextDataToActivity = findViewById(R.id.edit_text_pass_to_activity);
         mEditTextDataToFragment = findViewById(R.id.edit_text_pass_to_fragment);
+        mButtonCodeChallenge6 = findViewById(R.id.button_code_challenge_6);
+        mButtonCodeChallenge4 = findViewById(R.id.button_code_challenge_4);
+        mButtonCodeChallenge5 = findViewById(R.id.button_code_challenge_5);
+        mButtonCodeChallenge8 = findViewById(R.id.button_code_challenge_8);
     }
 
     private void loseFocus(View v) {

@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Challenge8Activity"
+            android:label="@string/title_activity_challenge8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Challenge5Activity"
+            android:label="@string/title_activity_code_challenge5" />
+        <activity
+            android:name=".Challenge4Activity"
+            android:label="@string/title_activity_code_challenge4" />
+        <activity
+            android:name=".CodeChallenge6and7Activity"
+            android:label="@string/title_activity_code_challenge6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".WithFragmentsActivity"
             android:label="@string/title_with_fragment_activity" />
         <activity android:name=".MainActivity">

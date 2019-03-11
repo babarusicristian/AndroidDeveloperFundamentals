@@ -52,7 +52,9 @@ public class WithFragmentsActivity extends AppCompatActivity {
         {
             Object myObj = myClass.newInstance();
             FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            FragmentTransaction fragmentTransaction =
+                    fragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+            fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_in_left);
             fragmentTransaction.add(myLayoutContainer, (Fragment) myObj);
             fragmentTransaction.commit(); //abia acum adauga fragmentul
 
