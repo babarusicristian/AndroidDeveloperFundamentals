@@ -58,12 +58,20 @@ public class FirstChallenge4Activity extends AppCompatActivity {
 
         if (requestCode == CODE_KEY && resultCode == Activity.RESULT_OK) {
 
-            String mess = data.getStringExtra(SecondChallenge4Activity.DATA_MESSAGE);
-            mTextViewDisplayMessage.setText(mess);
-            mEditTextMessage.setText("");
+            if (data.getStringExtra(SecondChallenge4Activity.DATA_MESSAGE).equals("")) {
+                //if come with no mess from back button action bar
+                mTextViewReplyLabel.setVisibility(View.GONE);
+                mTextViewDisplayMessage.setVisibility(View.GONE);
+                mTextViewDisplayMessage.setText("");
+                mEditTextMessage.setText("");
+            } else {
+                String mess = data.getStringExtra(SecondChallenge4Activity.DATA_MESSAGE);
+                mTextViewDisplayMessage.setText(mess);
+                mEditTextMessage.setText("");
 
-            mTextViewReplyLabel.setVisibility(View.VISIBLE);
-            mTextViewDisplayMessage.setVisibility(View.VISIBLE);
+                mTextViewReplyLabel.setVisibility(View.VISIBLE);
+                mTextViewDisplayMessage.setVisibility(View.VISIBLE);
+            }
 
         } else  if (resultCode == Activity.RESULT_CANCELED) {
             //errors or something else

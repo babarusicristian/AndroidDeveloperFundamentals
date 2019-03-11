@@ -21,6 +21,11 @@ public class SecondChallenge4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_challenge4);
 
+        //back button in action bar
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         initView();
 
         //receiving message from another activity
@@ -50,5 +55,14 @@ public class SecondChallenge4Activity extends AppCompatActivity {
         mButtonSend = findViewById(R.id.button_act2_send);
         mEditTextMessage = findViewById(R.id.edittext_act2_message);
         mTextViewDisplayMessage = findViewById(R.id.text_view_act2_display_message);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        Intent intentAct1 = new Intent(SecondChallenge4Activity.this, FirstChallenge4Activity.class);
+        intentAct1.putExtra(DATA_MESSAGE, "");
+        setResult(RESULT_OK, intentAct1);
+        finish();
+        return true;
     }
 }
