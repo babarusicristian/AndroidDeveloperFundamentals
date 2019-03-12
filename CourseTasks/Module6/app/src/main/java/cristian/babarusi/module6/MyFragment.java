@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,7 @@ import android.widget.Toast;
 public class MyFragment extends Fragment {
 
     private final static MyFragment instance = new MyFragment();
-    private String Behavior = "";
+    private String mBehavior = "";
 
     private TextView mTextViewDisplay;
 
@@ -31,14 +30,14 @@ public class MyFragment extends Fragment {
     }
 
     public String getBehavior() {
-        return Behavior;
+        return this.mBehavior;
     }
 
     public void setBehavior(String behavior) {
-        Behavior = behavior;
+        this.mBehavior = behavior;
     }
 
-    //pas 3
+    //step 3
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -66,7 +65,7 @@ public class MyFragment extends Fragment {
         return view;
     }
 
-    //pas 1
+    //step 1
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -75,7 +74,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 2
+    //step 2
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +83,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 4
+    //step 4
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -93,7 +92,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 5
+    //step 5
     @Override
     public void onStart() {
         super.onStart();
@@ -102,7 +101,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 6
+    //step 6
     @Override
     public void onResume() {
         super.onResume();
@@ -111,7 +110,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 7
+    //step 7
     @Override
     public void onPause() {
         super.onPause();
@@ -120,7 +119,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 8
+    //step 8
     @Override
     public void onStop() {
         super.onStop();
@@ -129,7 +128,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 9
+    //step 9
     @Override
     public void onDestroyView() {
         super.onDestroyView();
@@ -138,7 +137,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 10
+    //step 10
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -147,7 +146,7 @@ public class MyFragment extends Fragment {
         }
     }
 
-    //pas 11
+    //step 11
     @Override
     public void onDetach() {
         super.onDetach();
