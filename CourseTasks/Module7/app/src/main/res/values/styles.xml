@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerTheme</item>
+    </style>
+
+    <!-- tema pentru la dialog date picker -->
+    <style name="MyDatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/custom_orange</item>
+        <item name="selectableItemBackgroundBorderless">@color/custom_blue</item>
+        <item name="colorControlActivated">@color/custom_green</item>
+        <item name="colorControlHighlight">@color/custom_red</item>
+    </style>
+
+    <!-- Theme without action bar -->
+    <style name="AppThemeWithoutActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FFB939</item>
+        <item name="colorPrimaryDark">#FFA500</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerTheme</item>
+    </style>
+
+</resources>
