@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 public interface TheMovieDatabaseApi {
 
     @GET("top_rated")
-    Call<List<Titles>> getTopRated(
+    Call<List<TitlesList>> getTopRated(
             @Query("api_key") String apiKey,
             @Query("language") String language,
             @Query("page") Integer page);

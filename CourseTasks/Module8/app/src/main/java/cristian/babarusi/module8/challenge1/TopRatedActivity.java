@@ -50,29 +50,29 @@ public class TopRatedActivity extends AppCompatActivity {
 
         mTheMovieDatabaseApi = mRetrofit.create(TheMovieDatabaseApi.class);
 
-        Call<List<Titles>> call = mTheMovieDatabaseApi.getTopRated(MY_API_KEY, MY_LANGUAGE, 1);
-        call.enqueue(new Callback<List<Titles>>() {
+        Call<List<TitlesList>> call = mTheMovieDatabaseApi.getTopRated(MY_API_KEY, MY_LANGUAGE, 1);
+        call.enqueue(new Callback<List<TitlesList>>() {
             @Override
-            public void onResponse(Call<List<Titles>> call, Response<List<Titles>> response) {
+            public void onResponse(Call<List<TitlesList>> call, Response<List<TitlesList>> response) {
                 if (!response.isSuccessful()) {
                     mTextViewDisplayTopRated.setText("Code: " + response.code());
                     return;
                 }
 
                 //now start to retrive and display data into our text view
-                List<Titles> topRatedMoviesList = response.body(); //body is specific to response, not to our Api
+                List<TitlesList> topRatedMoviesList = response.body(); //body is specific to response, not to our Api
 
                 //in out api the fields are named: title, id, popularity, video and others :)
                 //in my case i use only the title field
-                for (Titles title : topRatedMoviesList) {
+                for (TitlesList title : topRatedMoviesList) {
                     String content = "";
-                    content += "title: " + title.getTitle() + "\n";
+                    content += "title: " + title.getTitlesList() + "\n";
                     mTextViewDisplayTopRated.append(content); //append = to add to the already text inserted there
                 }
             }
 
             @Override
-            public void onFailure(Call<List<Titles>> call, Throwable t) {
+            public void onFailure(Call<List<TitlesList>> call, Throwable t) {
                 //if there is any errors, display them in our text view
                 mTextViewDisplayTopRated.setText(t.getMessage());
             }
