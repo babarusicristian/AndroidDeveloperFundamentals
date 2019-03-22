@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Module8</string>
+    <string name="challenge_1">Challenge 1 (TheMovieDB Api)</string>
+    <string name="android_course_module_8">ANDROID Course: Module 8</string>
+    <string name="the_homework">Homework \u00A9 Băbăruși Cristian</string>
+    <string name="babarusi_cristian_copyright"> DNAS Software \u00AE Mar 2019</string>
+    <string name="title_themoviedb_api"><u>Working with TheMovieDB Api</u></string>
+    <string name="top_rated_movies">Top rated movies</string>
+    <string name="upcoming_movies">Upcoming movies</string>
+    <string name="now_playing_movies">Now playing movies</string>
+    <string name="showing_only_the_titles">Showing only the titles</string>
+    <string name="the_data_will_be_displayed_here">the data will be displayed here</string>
 </resources>
