@@ -2,10 +2,9 @@ package cristian.babarusi.module8.challenge1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.List;
 
 import cristian.babarusi.module8.R;
 import retrofit2.Call;
@@ -20,6 +19,13 @@ public class TopRatedActivity extends AppCompatActivity {
     private TheMovieDatabaseApi mTheMovieDatabaseApi;
     private TextView mTextViewDisplayTopRated;
 
+    private TextView mTextViewPrev;
+    private TextView mTextViewCurrentAndMaxPage;
+    private TextView mTextViewNext;
+
+    private int mCurrentPage = 1;
+    private int mMaximumPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +34,24 @@ public class TopRatedActivity extends AppCompatActivity {
         initView();
         getTopRatedMoviesTotalPages();
         getTopRatedMovies();
+
+        mTextViewPrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentPage--;
+                getTopRatedMovies();
+            }
+        });
+
+        mTextViewNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mCurrentPage++;
+                getTopRatedMovies();
+
+            }
+        });
 
     }
 
@@ -39,6 +63,10 @@ public class TopRatedActivity extends AppCompatActivity {
                 .build();
 
         mTextViewDisplayTopRated = findViewById(R.id.text_view_display_toprated_movies);
+
+        mTextViewPrev = findViewById(R.id.text_view_prev);
+        mTextViewCurrentAndMaxPage = findViewById(R.id.text_view_current_and_max_page);
+        mTextViewNext = findViewById(R.id.text_view_next);
     }
 
     private void getTopRatedMoviesTotalPages() {
@@ -57,7 +85,9 @@ public class TopRatedActivity extends AppCompatActivity {
                 MovieModel movieModelTotalPages = response.body();
                 //retrieve "total_pages"
                 int totPag = movieModelTotalPages.getTotalPages();
-                Toast.makeText(TopRatedActivity.this, "Top rated total pages: " + totPag, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(TopRatedActivity.this, "Top rated total pages: " + totPag, Toast.LENGTH_SHORT).show();
+                mMaximumPage = totPag;
+                mTextViewCurrentAndMaxPage.setText("page " + mCurrentPage + "/" + mMaximumPage);
             }
 
             @Override
@@ -75,7 +105,7 @@ public class TopRatedActivity extends AppCompatActivity {
 
         Call<MovieModelList> call =
                 mTheMovieDatabaseApi.getTopRated(Challenge1Activity.MY_API_KEY,
-                        Challenge1Activity.MY_LANGUAGE, 1); //parametrii de la api interface (query)
+                        Challenge1Activity.MY_LANGUAGE, mCurrentPage); //parametrii de la api interface (query)
         call.enqueue(new Callback<MovieModelList>() {
             @Override
             public void onResponse(Call<MovieModelList> call, Response<MovieModelList> response) {
@@ -94,6 +124,14 @@ public class TopRatedActivity extends AppCompatActivity {
                     content += movieModel.getTitle() + "\n";
                     mTextViewDisplayTopRated.append(content); //append = to add to the already
                     // text inserted there
+                }
+
+                //setting current pages
+                mTextViewCurrentAndMaxPage.setText("page " + mCurrentPage + "/" + mMaximumPage);
+                if (mCurrentPage == 1) {
+                    mTextViewPrev.setVisibility(View.INVISIBLE);
+                } else {
+                    mTextViewPrev.setVisibility(View.VISIBLE);
                 }
             }
 

@@ -12,4 +12,7 @@
     <string name="the_data_will_be_displayed_here">the data will be displayed here</string>
     <string name="title_upcoming_movies">Upcoming Movies</string>
     <string name="title_now_playing_movies">Now Playing Movies</string>
+    <string name="previous_page"><u>PREV</u></string>
+    <string name="next_page"><u>NEXT</u></string>
+    <string name="demo_page_x_xxx">loading pages</string>
 </resources>
