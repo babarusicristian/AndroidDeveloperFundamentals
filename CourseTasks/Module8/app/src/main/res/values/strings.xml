@@ -10,4 +10,6 @@
     <string name="now_playing_movies">Now playing movies</string>
     <string name="showing_only_the_titles">Showing only the titles</string>
     <string name="the_data_will_be_displayed_here">the data will be displayed here</string>
+    <string name="title_upcoming_movies">Upcoming Movies</string>
+    <string name="title_now_playing_movies">Now Playing Movies</string>
 </resources>
