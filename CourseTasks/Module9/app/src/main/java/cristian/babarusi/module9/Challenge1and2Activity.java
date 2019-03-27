@@ -1,5 +1,6 @@
 package cristian.babarusi.module9;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
 import cristian.babarusi.module9.utils.Snack;
@@ -28,6 +36,9 @@ public class Challenge1and2Activity extends AppCompatActivity {
     private Button mButtonClearData;
     private Button mButtonDisplayData;
 
+    private Button mButtonSaveToFile;
+    private Button mButtonDisplayFromFile;
+
     //for sharedPreferences
     public static final String SHARED_PREFS = "sharedPrefs";
 
@@ -43,6 +54,11 @@ public class Challenge1and2Activity extends AppCompatActivity {
     private String spPassword = "";
     private boolean spTerms = false;
 
+    //for file manager
+    String filename = "myfile.txt";
+    String fileContents = "";
+    FileOutputStream outputStream;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,54 +70,8 @@ public class Challenge1and2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //for first name
-                if (mEditTextFirstName.getText().toString().matches(".*[^a-zA-Z].*")) {
-                    mEditTextFirstName.requestFocus();
-                    mEditTextFirstName.setError(getString(R.string.first_name_invalid));
-                }
-                else if (mEditTextFirstName.getText().toString().isEmpty()) {
-                    mEditTextFirstName.requestFocus();
-                    mEditTextFirstName.setError(getString(R.string.this_field_required));
-                }
-                else if (mEditTextFirstName.getText().toString().length() < 3) {
-                    mEditTextFirstName.requestFocus();
-                    mEditTextFirstName.setError(getString(R.string.three_chars_minimum));
-                }
-
-                //for last name (space permitted)
-                else if (mEditTextLastName.getText().toString().matches(".*[^a-zA-Z\\s].*")) {
-                    mEditTextLastName.requestFocus();
-                    mEditTextLastName.setError(getString(R.string.last_name_invalid));
-                }
-                else if (mEditTextLastName.getText().toString().isEmpty()) {
-                    mEditTextLastName.requestFocus();
-                    mEditTextLastName.setError(getString(R.string.this_field_required));
-                }
-                else if (mEditTextLastName.getText().toString().length() < 3) {
-                    mEditTextLastName.requestFocus();
-                    mEditTextLastName.setError(getString(R.string.three_chars_minimum));
-                }
-                //for email
-                else if (mEditTextEmail.getText().toString().isEmpty()) {
-                    mEditTextEmail.requestFocus();
-                    mEditTextEmail.setError(getString(R.string.this_field_required));
-                }
-
-                else if (!validEmail(mEditTextEmail.getText().toString())) {
-                    mEditTextEmail.requestFocus();
-                    mEditTextEmail.setError(getString(R.string.email_invalid));
-                }
-                //for password (any chars permitted)
-                else if (mEditTextPassword.getText().toString().isEmpty()) {
-                    mEditTextPassword.requestFocus();
-                    mEditTextPassword.setError(getString(R.string.this_field_required));
-                }
-                //for terms and conditions
-                else if (!mCheckBoxAcceptTerms.isChecked()) {
-                    Snack.bar(v, getString(R.string.you_must_accept_terms));
-                }
                 //save data to sharepref
-                else {
+                if (fieldsVerifications(v)) {
                     spFirstName = mEditTextFirstName.getText().toString();
                     spLastName = mEditTextLastName.getText().toString();
                     spEmail = mEditTextEmail.getText().toString();
@@ -110,7 +80,6 @@ public class Challenge1and2Activity extends AppCompatActivity {
                     saveDataSharedPref();
                     Toast.makeText(Challenge1and2Activity.this, getString(R.string.data_saved_to_shared_pref), Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 
@@ -128,6 +97,31 @@ public class Challenge1and2Activity extends AppCompatActivity {
                 displayDataSharePref();
             }
         });
+
+        mButtonSaveToFile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //save data to internal file
+                if (fieldsVerifications(v)) {
+                    spFirstName = mEditTextFirstName.getText().toString();
+                    spLastName = mEditTextLastName.getText().toString();
+                    spEmail = mEditTextEmail.getText().toString();
+                    spPassword = mEditTextPassword.getText().toString();
+                    spTerms = mCheckBoxAcceptTerms.isChecked();
+
+                    saveDataToFile();
+                    Toast.makeText(Challenge1and2Activity.this, "Data saved to internal file", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        mButtonDisplayFromFile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadDataFromFile();
+            }
+        });
     }
 
     private void initView() {
@@ -141,6 +135,64 @@ public class Challenge1and2Activity extends AppCompatActivity {
         mButtonSaveData = findViewById(R.id.button_save_data);
         mButtonClearData = findViewById(R.id.button_clear_data);
         mButtonDisplayData = findViewById(R.id.button_display_data);
+        mButtonSaveToFile = findViewById(R.id.button_save_to_file);
+        mButtonDisplayFromFile = findViewById(R.id.button_display_from_file);
+    }
+
+    private boolean fieldsVerifications(View v) {
+
+        Boolean response = false;
+
+        //for first name
+        if (mEditTextFirstName.getText().toString().matches(".*[^a-zA-Z].*")) {
+            mEditTextFirstName.requestFocus();
+            mEditTextFirstName.setError(getString(R.string.first_name_invalid));
+        }
+        else if (mEditTextFirstName.getText().toString().isEmpty()) {
+            mEditTextFirstName.requestFocus();
+            mEditTextFirstName.setError(getString(R.string.this_field_required));
+        }
+        else if (mEditTextFirstName.getText().toString().length() < 3) {
+            mEditTextFirstName.requestFocus();
+            mEditTextFirstName.setError(getString(R.string.three_chars_minimum));
+        }
+
+        //for last name (space permitted)
+        else if (mEditTextLastName.getText().toString().matches(".*[^a-zA-Z\\s].*")) {
+            mEditTextLastName.requestFocus();
+            mEditTextLastName.setError(getString(R.string.last_name_invalid));
+        }
+        else if (mEditTextLastName.getText().toString().isEmpty()) {
+            mEditTextLastName.requestFocus();
+            mEditTextLastName.setError(getString(R.string.this_field_required));
+        }
+        else if (mEditTextLastName.getText().toString().length() < 3) {
+            mEditTextLastName.requestFocus();
+            mEditTextLastName.setError(getString(R.string.three_chars_minimum));
+        }
+        //for email
+        else if (mEditTextEmail.getText().toString().isEmpty()) {
+            mEditTextEmail.requestFocus();
+            mEditTextEmail.setError(getString(R.string.this_field_required));
+        }
+
+        else if (!validEmail(mEditTextEmail.getText().toString())) {
+            mEditTextEmail.requestFocus();
+            mEditTextEmail.setError(getString(R.string.email_invalid));
+        }
+        //for password (any chars permitted)
+        else if (mEditTextPassword.getText().toString().isEmpty()) {
+            mEditTextPassword.requestFocus();
+            mEditTextPassword.setError(getString(R.string.this_field_required));
+        }
+        //for terms and conditions
+        else if (!mCheckBoxAcceptTerms.isChecked()) {
+            Snack.bar(v, getString(R.string.you_must_accept_terms));
+        } else {
+            response = true;
+        }
+
+        return response;
     }
 
     private boolean validEmail(String email) {
@@ -202,4 +254,86 @@ public class Challenge1and2Activity extends AppCompatActivity {
             mTextViewDisplayData.setText(data);
         }
     }
+
+    private void saveDataToFile() {
+
+        fileContents = "Data from Internal File" +
+                "\n\nFirst name: "  + spFirstName +
+                "\nLast name: " + spLastName +
+                "\nEmail: " + spEmail +
+                "\nPassword: " + spPassword +
+                "\nTerms and Conditions: " + spTerms;
+
+        try {
+            outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+            outputStream.write(fileContents.getBytes());
+            outputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void loadDataFromFile() {
+
+        File file = getBaseContext().getFileStreamPath(filename);
+
+        if(file.exists())
+        {
+            String[] loadText = Load(file);
+            String finalString = "";
+
+            for (int i = 0; i < loadText.length; i++)
+            {
+                finalString += loadText[i] + System.getProperty("line.separator");
+            }
+            mTextViewDisplayData.setText(finalString);
+        }
+        else
+            Toast.makeText(getApplicationContext(), getString(R.string.file_not_found), Toast.LENGTH_SHORT).show();
+
+    }
+
+    //for reading file content
+    public static String[] Load(File file) {
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        InputStreamReader isr = new InputStreamReader(fis);
+        BufferedReader br = new BufferedReader(isr);
+
+        String test;
+        int anzahl = 0;
+        try {
+            while ((test = br.readLine()) != null) {
+                anzahl++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            fis.getChannel().position(0);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String[] array = new String[anzahl];
+
+        String line;
+        int i = 0;
+        try {
+            while ((line = br.readLine()) != null) {
+                array[i] = line;
+                i++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return array;
+    }
+
 }

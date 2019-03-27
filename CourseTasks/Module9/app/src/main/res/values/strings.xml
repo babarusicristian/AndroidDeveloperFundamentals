@@ -29,4 +29,5 @@
     <string name="save_to_file">Save to File</string>
     <string name="data_cleared_from_shared_pref">Data cleared from Shared Preferences</string>
     <string name="data_saved_to_shared_pref">Data saved to Shared Preferences</string>
+    <string name="file_not_found">file not found</string>
 </resources>
