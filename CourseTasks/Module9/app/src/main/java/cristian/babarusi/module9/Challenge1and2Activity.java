@@ -141,47 +141,52 @@ public class Challenge1and2Activity extends AppCompatActivity {
 
     private boolean fieldsVerifications(View v) {
 
-        Boolean response = false;
+        boolean response = false;
+
+        String firstName = mEditTextFirstName.getText().toString();
+        String lastName = mEditTextLastName.getText().toString();
+        String email = mEditTextEmail.getText().toString();
+        String password = mEditTextPassword.getText().toString();
 
         //for first name
-        if (mEditTextFirstName.getText().toString().matches(".*[^a-zA-Z].*")) {
+        if (firstName.matches(".*[^a-zA-Z].*")) {
             mEditTextFirstName.requestFocus();
             mEditTextFirstName.setError(getString(R.string.first_name_invalid));
         }
-        else if (mEditTextFirstName.getText().toString().isEmpty()) {
+        else if (firstName.isEmpty()) {
             mEditTextFirstName.requestFocus();
             mEditTextFirstName.setError(getString(R.string.this_field_required));
         }
-        else if (mEditTextFirstName.getText().toString().length() < 3) {
+        else if (firstName.length() < 3) {
             mEditTextFirstName.requestFocus();
             mEditTextFirstName.setError(getString(R.string.three_chars_minimum));
         }
 
         //for last name (space permitted)
-        else if (mEditTextLastName.getText().toString().matches(".*[^a-zA-Z\\s].*")) {
+        else if (lastName.matches(".*[^a-zA-Z\\s].*")) {
             mEditTextLastName.requestFocus();
             mEditTextLastName.setError(getString(R.string.last_name_invalid));
         }
-        else if (mEditTextLastName.getText().toString().isEmpty()) {
+        else if (lastName.isEmpty()) {
             mEditTextLastName.requestFocus();
             mEditTextLastName.setError(getString(R.string.this_field_required));
         }
-        else if (mEditTextLastName.getText().toString().length() < 3) {
+        else if (lastName.length() < 3) {
             mEditTextLastName.requestFocus();
             mEditTextLastName.setError(getString(R.string.three_chars_minimum));
         }
         //for email
-        else if (mEditTextEmail.getText().toString().isEmpty()) {
+        else if (email.isEmpty()) {
             mEditTextEmail.requestFocus();
             mEditTextEmail.setError(getString(R.string.this_field_required));
         }
 
-        else if (!validEmail(mEditTextEmail.getText().toString())) {
+        else if (!validEmail(email)) {
             mEditTextEmail.requestFocus();
             mEditTextEmail.setError(getString(R.string.email_invalid));
         }
         //for password (any chars permitted)
-        else if (mEditTextPassword.getText().toString().isEmpty()) {
+        else if (password.isEmpty()) {
             mEditTextPassword.requestFocus();
             mEditTextPassword.setError(getString(R.string.this_field_required));
         }
@@ -224,14 +229,11 @@ public class Challenge1and2Activity extends AppCompatActivity {
     }
 
     private void clearDataSharefPref() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        spFirstName = "";
-        spLastName = "";
-        spEmail = "";
-        spPassword = "";
-        spTerms = false;
-
-        saveDataSharedPref();
+        editor.clear();
+        editor.apply();
     }
 
     private void displayDataSharePref() {
