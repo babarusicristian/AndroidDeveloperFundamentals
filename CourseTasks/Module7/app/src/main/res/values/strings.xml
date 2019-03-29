@@ -13,7 +13,7 @@
     <string name="challenge_3">Challenge 3 (optional)</string>
     <string name="challenge_4">Challenge 4 (Date picker colors)</string>
     <string name="challenge_5">Challenge 5 (Collapsing Layout)</string>
-    <string name="challenge_6">Challenge 6 (use of camera)</string>
+    <string name="challenge_6">Challenge 6 (use of camera + gallery)</string>
     <string name="minus_sign">-</string>
     <string name="plus_sign">+</string>
     <string name="long_text"><b>Glasul pământului</b>
@@ -37,4 +37,6 @@ Glasul iubirii
 Căsătorit cu Ana și așezat la casa lui, Ion, din cauza firii lui pătimașe, nu se poate mulțumi cu averea pe care o dobândise și râvnește la Florica. Sfârșitul lui Ion este năprasnic, fiind omorât de George Bulbuc, care-l prinde iubindu-se cu nevasta lui, așadar Rebreanu propune pentru sfârșitul pătimașului Ion o crimă pasională.
 
 Finalul romanului surprinde satul adunat la sărbătoarea sfințirii noii biserici, descrie drumul care iese din satul Pripas, viața urmându-și cursul firesc: „Pripasul de-abia își mai arăta câteva case. Doar turnul cotește, apoi se îndoaie, apoi se întinde, iar dreaptă ca o panglică cenușie în amurgul răcoros. (…) Satul a rămas înapoi același, parcă nimic nu s-ar fi schimbat. Câțiva oameni s-au stins, alții le-au luat locul. (&#8230;) Drumul trece prin Jidovița, pe podul de lemn, acoperit, de peste Someș, și pe urmă se pierde în șoseaua cea mare și fără început ”.</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
 </resources>
