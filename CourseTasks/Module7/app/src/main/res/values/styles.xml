@@ -13,7 +13,7 @@
     <!-- tema pentru la dialog date picker -->
     <style name="MyDatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">@color/custom_orange</item>
-        <item name="selectableItemBackgroundBorderless">@color/custom_blue</item>
+        <item name="android:selectableItemBackgroundBorderless">@color/custom_blue</item>
         <item name="colorControlActivated">@color/custom_green</item>
         <item name="colorControlHighlight">@color/custom_red</item>
     </style>
